@@ -1,0 +1,5 @@
+<ng-container *ngIf="uiData$ | async as uiData">
+    <input type="text" [ngModel]="uiData.ipAdress" (ngModelChange)="ipAdressChanged($event)"/>
+    <button (click)="getCityInfo()"></button>
+    {{uiData.cityInfo}}
+</ng-container>
