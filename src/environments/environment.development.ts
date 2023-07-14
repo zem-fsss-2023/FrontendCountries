@@ -1,3 +1,3 @@
 export const environment = {
-    backendBaseUrl: 'http://localhost:3123'
+    backendBaseUrl: 'https://fsss-country-relevance.azurewebsites.net'
 };
