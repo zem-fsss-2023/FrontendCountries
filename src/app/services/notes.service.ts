@@ -13,7 +13,7 @@ export class NotesService{
 
     getCityInfo(ipAdress: string): Observable<string>{
         return this.http.get<string>(
-            `${NOTES_BASE_URL}/${ipAdress}`
+            `${NOTES_BASE_URL}/getCity`,{params:{ip:ipAdress}}
         );
     }
 }

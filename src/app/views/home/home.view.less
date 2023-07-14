@@ -1,50 +1,41 @@
-:host{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: var(--spacing-small);
-    gap: var(--spacing-huge);
-    flex-wrap: wrap;
-
-    .fsss-home-view__note-create{
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        color: var(--color-text-lighter);
-
-        h1{
-            font-size: 48px;
-            margin: -30px 0 0 0;
-        }
-    }
-
-    .fsss-home-view__note-preview{
-        height: 400px;
-        max-height: 30vh;
-        min-height: 200px;
-        border: 1px solid var(--color-border);
-        border-radius: var(--spacing-huge);
-        padding: var(--spacing-huge);
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-
-        &:hover{
-            background-color: var(--color-hover);        }
-
-        h2{
-            margin: 0 0 var(--spacing-small) 0;
-            border-bottom: 1px solid  var(--color-border);
-        }
-
-        .fsss-home-view__note-text{
-            resize: none;
-            border: none;
-            background-color: transparent;
-            padding: 0;
-            flex-grow: 1;
-            font: inherit;
-            outline: none;
-            cursor: inherit;
-        }
-    }
+.home__text_input{
+    color: black;
 }
+
+.home__city_info {
+    color: var(--text-color);
+}
+
+.top_input {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .top_input input {
+        width: 20%;
+        color: #ddd; /* Set the input text color in dark mode */
+        background-color: #444; /* Set the input background color in dark mode */
+        border: none; /* Remove the border */
+        outline: none; /* Remove the outline */
+        padding: 5px 10px; /* Adjust the padding as desired */
+        box-sizing: border-box;
+        height: 40px;
+    }
+    .top_input button {
+        width: 10%;
+        margin: 0 10px;
+        background-color: #666; /* Set the background color of the button */
+        color: #fff; /* Set the text color of the button */
+        border: none; /* Remove the border */
+        padding: 10px 20px; /* Adjust the padding as desired */
+        cursor: pointer; /* Show pointer cursor on hover */
+        transition: background-color 0.3s ease;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    .top_input button:hover {
+        background-color: #45A049;; /* Set the background color on hover */
+    }
+    .home__city_info {
+        padding: 10px;
+    }
